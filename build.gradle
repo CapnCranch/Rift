@@ -36,7 +36,7 @@ repositories {
 	maven { url = "https://files.minecraftforge.net/maven" }
     maven { url 'https://www.dimdev.org/maven/' }
     maven { url = 'https://repo.spongepowered.org/maven/' }
-	maven { url 'http://repo.strezz.org/artifactory/list/Strezz-Central' }
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -44,6 +44,7 @@ dependencies {
     implementation('net.minecraft:launchwrapper:1.12') { transitive = false }
     implementation 'org.ow2.asm:asm:6.2'
     implementation 'org.ow2.asm:asm-commons:6.2'
+	implementation 'com.github.MinecraftForge:MCPConfig:Tag'
 }
 
 minecraft {
